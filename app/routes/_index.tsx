@@ -23,7 +23,6 @@ export async function loader({context}: LoaderArgs) {
 
 export default function Homepage() {
   const data = useLoaderData<typeof loader>();
-  console.log('hello');
   return (
     <div className="home">
       <FeaturedCollection collection={data.featuredCollection} />
