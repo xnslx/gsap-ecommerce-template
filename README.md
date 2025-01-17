@@ -21,4 +21,6 @@ PUBLIC_CUSTOMER_ACCOUNT_API_CLIENT_ID=
 PUBLIC_CUSTOMER_ACCOUNT_API_URL=
 
 ```
+This is a cheat sheet for how to find all the env virables.
+![SESSION_SECRET](https://github.com/user-attachments/assets/b5172059-db22-4e8a-bc8f-ab42e6ece9a5)
 
