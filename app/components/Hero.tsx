@@ -32,14 +32,13 @@ export const Hero = ({products}) => {
           scrub: true,
           end: '+=8000px',
           pin: true,
-          markers: true,
+          markers: process.env.NODE_ENV === 'development',
           endTrigger: '.hero-products-inner-container',
         },
       });
 
       products.forEach((pd, index) => {
         const containerWidth = container?.clientWidth || window.innerWidth;
-        const spacing = containerWidth / (products.length + 1);
 
         const randomX = getRandomPosition(containerWidth - BASE_WIDTH);
         const randomY = getRandomPosition(window.innerHeight - BASE_WIDTH);
